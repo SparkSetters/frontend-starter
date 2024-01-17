@@ -1,4 +1,7 @@
-File based routing with Tanstack router v1
+THE TANILLA STACK
+
+Tanstack Router + Query.
+React + Tailwind + ShadcnUI
 
 ## Expanding the ESLint configuration
 
