@@ -10,19 +10,19 @@ function useAuth() {
   const { setItem, getItem, removeItem } = useLocalStorage();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  function logIn(username: string) {
-    void setItem("zavinci-active-user", username);
+  function logIn(code: string) {
+    void setItem("fesapp", code);
     setIsLoggedIn(true);
   }
   function getActiveUser() {
     if (typeof window !== "undefined") {
-      return getItem("zavinci-active-user");
+      return getItem("fesapp");
     }
     return null;
   }
 
   function deleteSession() {
-    return removeItem("zavinci-active-user");
+    return removeItem("fesapp");
   }
 
   // const loginMutation = useMutation({
